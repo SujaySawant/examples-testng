@@ -16,7 +16,7 @@
         <aspectj.version>1.9.5</aspectj.version>
         <allure-maven.version>2.10.0</allure-maven.version>
         <testng.parallel>methods</testng.parallel>
-        <testng.threadCount>10</testng.threadCount>
+        <testng.threadCount>5</testng.threadCount>
     </properties>
     <build>
         <plugins>
@@ -335,8 +335,8 @@
                                     <value>com.browserstack.app.utils.BrowserstackTestStatusListener</value>
                                 </property>
                             </properties>
-                            <!--<parallel>${testng.parallel}</parallel>
-                            <threadCount>${testng.threadCount}</threadCount>-->
+                            <parallel>tests</parallel>
+                            <threadCount>5</threadCount>
                             <suiteXmlFiles>
                                 <suiteXmlFile>src/test/resources/conf/runners/testng-browserstack-parallel.xml
                                 </suiteXmlFile>
