@@ -1,6 +1,6 @@
-package com.browserstack.test.utils;
+package com.browserstack.app.utils;
 
-import com.browserstack.test.suites.TestBase;
+import com.browserstack.app.utils.TestBase;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -11,7 +11,7 @@ public class ScreenshotListener extends TestListenerAdapter {
 
     @Attachment(value = "Failure screenshot", type = "image/png")
     public byte[] attachFailedScreenshot() {
-        return ((TakesScreenshot) TestBase.getDriver()).getScreenshotAs(OutputType.BYTES);
+        return ((TakesScreenshot) TestBase.getDriverThread()).getScreenshotAs(OutputType.BYTES);
     }
 
     @Override

@@ -1,6 +1,6 @@
 package com.browserstack.app.pages;
 
-import com.browserstack.test.suites.TestBase;
+import com.browserstack.app.utils.TestBase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -10,7 +10,7 @@ public class BasePage {
     protected WebDriverWait wait;
 
     public BasePage() {
-        this.driver = TestBase.getDriver();
+        this.driver = TestBase.getDriverThread();
         this.wait = new WebDriverWait(driver, 10);
     }
 

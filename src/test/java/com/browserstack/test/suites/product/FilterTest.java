@@ -1,8 +1,8 @@
 package com.browserstack.test.suites.product;
 
 import com.browserstack.app.pages.HomePage;
-import com.browserstack.test.suites.TestBase;
-import com.browserstack.test.utils.CsvUtil;
+import com.browserstack.app.utils.TestBase;
+import com.browserstack.app.utils.CsvUtil;
 import org.assertj.core.api.Assertions;
 import org.testng.Assert;
 import org.testng.annotations.Test;

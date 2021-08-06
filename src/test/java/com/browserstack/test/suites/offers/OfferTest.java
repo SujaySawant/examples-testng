@@ -1,7 +1,7 @@
 package com.browserstack.test.suites.offers;
 
 import com.browserstack.app.pages.HomePage;
-import com.browserstack.test.suites.TestBase;
+import com.browserstack.app.utils.TestBase;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -17,7 +17,7 @@ public class OfferTest extends TestBase {
     @Test(description = "Check offers in Singapore")
     public void checkOffersInSingapore() {
         String locationScript = String.format(LOCATION_SCRIPT_FORMAT, OFFER_LATITUDE, OFFER_LONGITUDE);
-        ((JavascriptExecutor) getDriver()).executeScript(locationScript);
+        ((JavascriptExecutor) getDriverThread()).executeScript(locationScript);
 
         int offerSize = new HomePage()
                 .navigateToSignIn()

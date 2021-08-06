@@ -2,8 +2,8 @@ package com.browserstack.test.suites.login;
 
 import com.browserstack.app.pages.HomePage;
 import com.browserstack.app.pages.LoginPage;
-import com.browserstack.test.suites.TestBase;
-import com.browserstack.test.utils.CsvUtil;
+import com.browserstack.app.utils.TestBase;
+import com.browserstack.app.utils.CsvUtil;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

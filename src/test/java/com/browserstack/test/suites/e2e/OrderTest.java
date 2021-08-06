@@ -3,7 +3,7 @@ package com.browserstack.test.suites.e2e;
 import com.browserstack.app.pages.ConfirmationPage;
 import com.browserstack.app.pages.HomePage;
 import com.browserstack.app.pages.OrdersPage;
-import com.browserstack.test.suites.TestBase;
+import com.browserstack.app.utils.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

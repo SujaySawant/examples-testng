@@ -73,7 +73,6 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.1.0</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -193,12 +192,12 @@
                         <configuration>
                             <systemPropertyVariables>
                                 <environment>remote</environment>
-                                <testtype>single</testtype>
+                                <testType>single</testType>
                             </systemPropertyVariables>
                             <properties>
                                 <property>
                                     <name>listener</name>
-                                    <value>com.browserstack.test.utils.BrowserstackTestStatusListener</value>
+                                    <value>com.browserstack.app.utils.BrowserstackTestStatusListener</value>
                                 </property>
                             </properties>
                             <includes>
@@ -221,12 +220,12 @@
                         <configuration>
                             <systemPropertyVariables>
                                 <environment>remote</environment>
-                                <testtype>local</testtype>
+                                <testType>local</testType>
                             </systemPropertyVariables>
                             <properties>
                                 <property>
                                     <name>listener</name>
-                                    <value>com.browserstack.test.utils.BrowserstackTestStatusListener</value>
+                                    <value>com.browserstack.app.utils.BrowserstackTestStatusListener</value>
                                 </property>
                             </properties>
                             <includes>
@@ -249,12 +248,12 @@
                         <configuration>
                             <systemPropertyVariables>
                                 <environment>remote</environment>
-                                <testtype>local</testtype>
+                                <testType>local</testType>
                             </systemPropertyVariables>
                             <properties>
                                 <property>
                                     <name>listener</name>
-                                    <value>com.browserstack.test.utils.BrowserstackTestStatusListener</value>
+                                    <value>com.browserstack.app.utils.BrowserstackTestStatusListener</value>
                                 </property>
                             </properties>
                             <parallel>${testng.parallel}</parallel>
@@ -274,12 +273,12 @@
                         <configuration>
                             <systemPropertyVariables>
                                 <environment>remote</environment>
-                                <testtype>local</testtype>
+                                <testType>local</testType>
                             </systemPropertyVariables>
                             <properties>
                                 <property>
                                     <name>listener</name>
-                                    <value>com.browserstack.test.utils.BrowserstackTestStatusListener</value>
+                                    <value>com.browserstack.app.utils.BrowserstackTestStatusListener</value>
                                 </property>
                             </properties>
                             <parallel>${testng.parallel}</parallel>
@@ -303,12 +302,12 @@
                         <configuration>
                             <systemPropertyVariables>
                                 <environment>remote</environment>
-                                <testtype>parallel</testtype>
+                                <testType>parallel</testType>
                             </systemPropertyVariables>
                             <properties>
                                 <property>
                                     <name>listener</name>
-                                    <value>com.browserstack.test.utils.BrowserstackTestStatusListener</value>
+                                    <value>com.browserstack.app.utils.BrowserstackTestStatusListener</value>
                                 </property>
                             </properties>
                             <parallel>${testng.parallel}</parallel>
@@ -328,12 +327,12 @@
                         <configuration>
                             <systemPropertyVariables>
                                 <environment>remote</environment>
-                                <testtype>parallel</testtype>
+                                <testType>parallel</testType>
                             </systemPropertyVariables>
                             <properties>
                                 <property>
                                     <name>listener</name>
-                                    <value>com.browserstack.test.utils.BrowserstackTestStatusListener</value>
+                                    <value>com.browserstack.app.utils.BrowserstackTestStatusListener</value>
                                 </property>
                             </properties>
                             <!--<parallel>${testng.parallel}</parallel>

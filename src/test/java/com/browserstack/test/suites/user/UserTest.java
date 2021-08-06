@@ -1,7 +1,7 @@
 package com.browserstack.test.suites.user;
 
 import com.browserstack.app.pages.HomePage;
-import com.browserstack.test.suites.TestBase;
+import com.browserstack.app.utils.TestBase;
 import org.assertj.core.api.Assertions;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;

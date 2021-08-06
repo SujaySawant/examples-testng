@@ -1,4 +1,4 @@
-package com.browserstack.test.utils;
+package com.browserstack.app.utils;
 
 import com.browserstack.app.utils.OsUtils;
 
