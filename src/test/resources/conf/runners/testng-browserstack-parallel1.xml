@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" parallel="tests" thread-count="5">
+    <test name="BStackDemo chrome">
+        <parameter name="env_cap_id" value="0"/>
+        <packages>
+            <package name="com.browserstack.test.suites.*" />
+        </packages>
+    </test>
+    <test name="BStackDemo edge">
+        <parameter name="env_cap_id" value="1"/>
+        <packages>
+            <package name="com.browserstack.test.suites.*" />
+        </packages>
+    </test>
+    <test name="BStackDemo safari">
+        <parameter name="env_cap_id" value="3"/>
+        <packages>
+            <package name="com.browserstack.test.suites.*" />
+        </packages>
+    </test>
+    <test name="BStackDemo Android">
+        <parameter name="env_cap_id" value="4"/>
+        <packages>
+            <package name="com.browserstack.test.suites.*" />
+        </packages>
+    </test>
+    <test name="BStackDemo iPhone">
+        <parameter name="env_cap_id" value="5"/>
+        <packages>
+            <package name="com.browserstack.test.suites.*" />
+        </packages>
+    </test>
+</suite>
