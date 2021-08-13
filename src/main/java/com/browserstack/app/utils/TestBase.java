@@ -50,7 +50,12 @@ public class TestBase {
                 JSONObject envs = (JSONObject) profilesJson.get(testType);
                 Map<String, String> commonCapabilities = (Map<String, String>) envs.get("common_caps");
                 commonCapabilities.put("name", tr.getMethod().getDescription());
-                commonCapabilities.put("build", commonCapabilities.get("build") + " - " + TIMESTAMP);
+                String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
+                if (buildName != null) {
+                    commonCapabilities.put("build", buildName);
+                } else {
+                    commonCapabilities.put("build", commonCapabilities.get("build") + " - " + TIMESTAMP);
+                }
                 Map<String, String> envCapabilities = (Map<String, String>) ((org.json.simple.JSONArray) envs.get("env_caps")).get(env_cap_id);
                 Map<String, String> localCapabilities = (Map<String, String>) envs.get("local_binding_caps");
                 DesiredCapabilities caps = new DesiredCapabilities();
