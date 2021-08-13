@@ -82,7 +82,6 @@ public class TestBase {
     public void tearDown() throws Exception {
         getDriverThread().quit();
         if (local != null) local.stop();
-
     }
 
     private String getUsername(JSONObject testCapsConfig) {
