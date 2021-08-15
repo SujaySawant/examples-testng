@@ -17,7 +17,7 @@ public class UserTest extends TestBase {
                 .navigateToSignIn()
                 .loginWith("image_not_loading_user", "testingisfun99")
                 .getAllEmptyImageSrcElements();
-        Assert.assertTrue(!imageSrc.isEmpty(), "Images are not displayed");
+        Assert.assertTrue(imageSrc.isEmpty(), "Images are not displayed");
     }
 
     @Test(description = "Login and check existing orders")
